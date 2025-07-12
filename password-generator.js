@@ -7,16 +7,10 @@ import { generate } from "generate-password";
 
 // Define a function to generate and log a random password.
 function generateRandomPassword() {
-  // Generate a random password with specified options.
-  // 'length': the length of the password.
-  // 'numbers': include numbers.
-  // 'symbols': include symbols.
-  // 'uppercase': include uppercase letters.
-  // 'excludeSimilarCharacters': exclude characters that look similar (e.g., 'l', '1', 'I', 'o', '0', 'O').
   const password = generate({
     length: 12, // You can change the length as desired
     numbers: true,
-    symbols: true,
+    symbols: false,
     uppercase: true,
     excludeSimilarCharacters: true,
   });
